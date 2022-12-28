@@ -1,0 +1,21 @@
+.title{
+    color: blue;
+    font-size: 80px;
+    text-align: center;
+}
+
+#p{
+    text-decoration: none;
+    color: brown;
+}
+body{
+    background-color:azure;
+}
+
+#btn{
+    padding: 10px 20px;
+    background-color: green;
+    color: azure;
+    text-decoration: none;
+    border-radius: 10px;
+}

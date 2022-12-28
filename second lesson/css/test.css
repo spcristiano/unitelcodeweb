@@ -1,0 +1,16 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.quadrado{
+    color: red;
+    background-color: aquamarine;
+    padding: 2px 10px;
+    width: 300px;
+}
+body{
+    background-image: url("../img/animal.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
