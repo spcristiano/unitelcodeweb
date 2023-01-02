@@ -1,0 +1,1326 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* overflow-x: hidden;     */
+    transition: 0.04s all ease-in-out
+}
+
+:root {
+    --tipo-letra: "Nunito", Helvetica, Arial, sans-serif;
+    --verde-claro: #0bf96a;
+    --verde-escuro: #049A40;
+    --rosa-claro: #f3a0fd;
+    --rosa-escuro: #e10bf9;
+    --castanho: #e2e2e2;
+    --branco: #ffffff;
+    --preto: #000000;
+    --amarelho: #eaee00;
+    --azul: #6dbde2;
+
+}
+
+body,
+html {
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+}
+
+/* Header Section Start */
+.header-section {
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 0.8rem 0.8rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.menu a:hover{
+    background-color: var(--rosa-escuro);
+    border-radius: 10px;
+    color: var(--branco);
+    transition: 0.3s all ease-in-out;
+}
+
+/* Header Section End */
+
+
+/* Intro Section Start */
+
+.intro-section {
+    background-color: var(--castanho);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+hr {
+    border: none;
+    background-color: var(--rosa-escuro);
+    width: 15rem;
+    height: 3px;
+}
+
+/* Intro Section End */
+
+/* Quem somos Section Start */
+
+.quem-somos-section {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--castanho);
+    justify-content: center;
+    align-items: center;
+}
+
+/* .title-somos{
+    padding: 1.4rem 0rem;
+} */
+.h3-title {
+    padding: 2rem 0px;
+    font-size: 4rem;
+}
+
+.somos {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.somos-img-container {
+    max-width: 50%;
+}
+
+.somos-text {
+    max-width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.somos-text div{
+    margin: 1rem 0px;
+
+}
+
+/* Quem somos section End */
+
+
+/* Nosso Cursos Start */
+
+.nosso-cursos-section {
+    background-color: var(--castanho);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.curso-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cursos {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+/* Nosso Cursos End */
+
+
+/* Plano Start */
+
+.plano-section {
+    background-color: var(--rosa-claro);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plano-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.plano {
+    border: solid 0.15rem var(--verde-escuro);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.margin-5-3 {
+    margin-top: 5.3rem;
+}
+
+.margin-2-6 {
+    margin-top: 2.6rem;
+}
+
+
+.plano hr {
+    border: none;
+    background-color: var(--verde-escuro);
+    width: 40px;
+    height: 3px;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.plano h4 {
+    font-size: 2.5rem;
+    padding: 0.6rem;
+}
+
+.plano li {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: italic;
+
+}
+
+.plano:last-child {
+    background-color: var(--verde-claro);
+}
+
+.plano ul li::before {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    background-color: var(--verde-escuro);
+    border-radius: 5px;
+    margin-right: 0.7rem;
+}
+
+.compra {
+    border: solid var(--verde-escuro);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.compra:hover{
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+/* Plano End */
+
+/* Advantages Start */
+.advantages-section {
+    background-color: var(--castanho);
+    padding: 2rem 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-container {
+    display: flex;
+    width: 80%;
+    flex-flow: column;
+    padding-bottom: 2.5rem;
+}
+
+.advantage-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.advantage {
+    display: flex;
+    flex-flow: column;
+    max-width: 23rem;
+}
+
+.verde-claro {
+    border-left: solid 1rem var(--verde-claro);
+    margin: 0px 0px 1rem 0px;
+    padding: 0px 0.5rem;
+}
+
+.rosa-escuro {
+    border-left: solid 1rem var(--rosa-escuro);
+    margin: 0px 0px 1rem 0px;
+    padding: 0px 0.5rem;
+
+
+}
+
+
+.verde-escuro {
+    border-left: solid 1rem var(--verde-escuro);
+    margin: 0px 0px 1rem 0px;
+    padding: 0px 0.5rem;
+}
+
+/* Advantages End */
+
+/* Newsletter Start */
+.news-letter-section {
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0px;
+}
+
+.news-letter-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-form {
+    display: flex;
+    background-color: var(--rosa-escuro);
+    padding: 0.6rem;
+    align-items: center;
+}
+
+.newsletter-input {
+    height: 3rem;
+    max-width: 23rem;
+    font-size: 1.6rem;
+    color: var(--rosa-escuro);
+    padding: 1rem;
+}
+
+.newsletter-submit-btn {
+    background-color: var(--rosa-escuro);
+    color: var(--preto);
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px 1rem;
+}
+
+.news-letter-container .h3-title {
+    font-size: 3rem;
+    padding: 0px;
+}
+
+.news-letter-container p {
+    font-size: 1.3rem;
+}
+
+/* Newsletter End */
+
+/* Footer Start */
+.footer-section {
+    background-color: var(--rosa-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.reserved-rights {
+    font-weight: bold;
+    font-family: italic;
+    ;
+}
+
+/* Footer End */
+
+
+/* mobile navigation starts  */
+.mobile-nav-container {
+    border-radius: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.span {
+    display: flex;
+    width: 2.4rem;
+    height: 0.3rem;
+    background-color: var(--preto);
+}
+
+.span::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 0.3rem;
+    background-color: var(--preto);
+    position: absolute;
+    top: 10px;
+    left: 13px
+}
+
+.span::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 0.3rem;
+    background-color: var(--preto);
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+}
+.d-none{
+display: none;
+}
+.overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--preto);
+    background-color: rgba(0, 0, 0, 0.89);
+    transition: 0.5s;
+}
+.closebtn{
+    color: var(--branco);
+    position: relative;
+    right: 12.4rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    border-radius: 1rem;
+    top: 1rem;
+    
+}
+.closebtn:hover{
+    color:var(--rosa-escuro);
+    transition: all 0.3s ease-in-out;
+}
+.overlay a{
+    color: var(--branco);
+}
+.overlay-content{
+    position: relative;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column;
+    top: 25%;
+    left: 10%;
+
+    font-size: 2rem;
+}
+
+.overlay-content a{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: var(--verde-claro);
+}
+
+.overlay-content a:hover{
+    color: var(--branco);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--rosa-escuro);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@media screen and (max-width:412px){
+    p{
+        font-size: 1rem;
+        line-height: 15px;
+        
+    }
+
+    .header-section{
+        padding:0.16rem;
+    }
+
+    .logo{
+        width: 9rem;
+    }
+
+    .mobile-nav-container{
+        border: none;
+        height: 2.3rem;
+        width: 2.3rem;
+        border-radius: 0.7rem;
+    }
+    .span{
+        width: 1.8rem;
+        height: 0.2rem;
+        background-color: var(--rosa-escuro);
+    }
+    .span::before{
+        width: 1rem;
+        height: 0.2rem;
+        left:9px;
+    }
+
+    .span::after{
+        width: 1rem;
+        height: 0.2rem;
+        left:9px;
+    }
+
+    .closebtn{
+        right:2.5rem;
+        font-size: 2rem;
+        width: 1rem;
+        height: 0.2rem;
+        ;
+    }
+
+    .overlay-content{
+        padding: 0px;
+        top:10%;
+        font-size: 1.3rem;
+    }
+
+    .intro{
+        padding: 0.8rem;
+    }
+
+    .intro h1{
+        font-size: 1.6rem;
+        ;
+    }
+
+    hr{
+        width: 5rem;
+        height: 0.1rem;
+    }
+
+    .h3-title{
+        font-size: 1.6rem;
+    }
+    .somos{
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .somos-img-container{
+        display: none;
+    }
+
+    .somos-text{
+        max-width: fit-content;
+        ;
+    }
+
+    .somos-text div{
+        margin-bottom: 1rem;
+    }
+
+    .nosso-cursos-section{
+        padding-bottom:1rem ;
+    }
+
+    .curso-container{
+        flex-flow: column ;
+    }
+
+    .cursos img{
+        width: 13rem;
+        ;
+    }
+    .description{
+        padding:0.1rem 1rem 1rem 1rem;
+    }
+
+    h4{
+        font-size: 1.3rem;
+        padding: 0.3rem;
+    }
+
+    .plano-container{
+        flex-flow: column;
+       
+    }
+
+    .plano{
+        
+        padding: 0rem 0rem 1rem 0rem;
+        margin-top:1.5rem;
+
+    }
+
+    .plano h4{
+        padding: 0rem;
+    }
+
+    .margin-1-6{
+        /* margin-top:1.5rem; */
+    }
+
+    .margin-5-3{
+        margin-top: 0rem;
+    }
+
+    .plano hr{
+        width: 20px;
+    }
+
+    .advantage-row{
+        flex-flow: column;
+        padding-top: 0.5rem;
+    }
+
+
+    .verde-escuro{
+        margin-top: 1rem;
+
+    }
+
+    .rosa-escuro{
+        margin-top: 1em;;
+    }
+
+    .news-letter-section{
+        padding: 1rem 0px;
+        ;
+    }
+    .news-letter-container{
+        flex-flow: column;
+        justify-content:center ;
+        align-items: center;
+        ;
+
+    }
+    .news-letter-container .h3-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .news-letter-container div{
+        width: 100%;
+    }
+
+    .news-letter-container p{
+     font-size: 1rem; 
+     text-align: center;  
+    }
+
+
+    .newsletter-form{
+        flex-flow: column;
+        margin-top: 0.6rem;
+        /* width: 100%;; */
+        /* height: fit-content; */
+        /* padding: 0px; */
+        
+        /* width: 10%; */
+    }
+
+    .newsletter-input{
+        height: fit-content;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    footer{
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-submit-btn{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .reserved-rights p{
+
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:413px) and (max-width:760px){
+    p{
+        font-size: 1.2rem;
+        line-height: 18px;
+        
+    }
+
+    .header-section{
+        padding:0.2rem;
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+    .mobile-nav-container{
+        border: none;
+        height: 3.rem;
+        width: 3rem;
+        border-radius: 0.7rem;
+    }
+    .span{
+        width: 2rem;
+        height: 0.3rem;
+        background-color: var(--rosa-escuro);
+    }
+    .span::before{
+        width: 1rem;
+        height: 0.3rem;
+        left:15px;
+        top: 1rem
+    }
+
+    .span::after{
+        width: 1rem;
+        height: 0.3rem;
+        left:15px;
+        bottom: 1rem
+
+    }
+
+    .closebtn{
+        right:3.8rem;
+        font-size: 2.5rem;
+        width: 1.3rem;
+        height: 0.9rem;
+        top:1.5rem;
+        ;
+    }
+
+    .overlay-content{
+        padding: 0px;
+        top:10%;
+        font-size: 1.3rem;
+    }
+
+    .intro{
+        padding: 0.8rem;
+    }
+
+    .intro h1{
+        font-size: 2.3rem;
+        ;
+    }
+
+    hr{
+        width: 7rem;
+        height: 0.1rem;
+    }
+
+    .h3-title{
+        font-size: 2rem;
+    }
+    .somos{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .somos-img-container{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .somos-img-container img{
+        width: 100%;
+    }
+
+    .somos-text{
+        max-width: fit-content;
+    }
+
+    .somos-text div{
+        margin-bottom: 1.5rem;
+    }
+
+    .nosso-cursos-section{
+        padding-bottom:1.5rem ;
+    }
+
+    .curso-container{
+        flex-flow: column ;
+    }
+
+    .cursos img{
+        width: 20rem;
+        ;
+    }
+    .description{
+        padding:0.1rem 1rem 1rem 1rem;
+    }
+
+    h4{
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+
+    .plano-container{
+        flex-flow: column;
+    }
+
+    .plano{
+        
+        padding: 0rem 0rem 1rem 0rem;
+        margin-top:1.5rem;
+
+    }
+
+    .plano h4{
+        padding: 0rem;
+    }
+
+    .margin-1-6{
+        margin-top:1.5rem;
+    }
+
+    .margin-5-3{
+        margin-top: 0rem;
+    }
+
+    .plano hr{
+        width: 25px;
+        
+    }
+
+    .advantage-row{
+        flex-flow: column;
+        padding-top: 1rem;
+        /* justify-content: center; */
+        /* align-items: space-between; */
+    }
+    .advantage{
+        max-width: 100%;;
+    }
+
+    .verde-escuro{
+        margin-top: 1rem;
+
+    }
+
+    .rosa-escuro{
+        margin-top: 1em;;
+    }
+
+    .news-letter-section{
+        padding: 1.5rem 0px;
+    }
+    .news-letter-container{
+        flex-flow: column;
+        justify-content:center ;
+        align-items: center;
+    }
+    .news-letter-container .h3-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .news-letter-container div{
+        width: 100%;
+    }
+
+    .news-letter-container p{
+     font-size: 1.5rem;  
+     text-align: center; 
+     
+    }
+
+    .newsletter-form{
+        flex-flow: column;
+        margin-top: 0.8rem;
+        /* width: 130%; */
+        /* height: fit-content; */
+        /* padding: 0px; */
+        /* margin: 0px; */
+        
+        /* width: 10%; */
+    }
+
+    .newsletter-input{
+        height: fit-content;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    footer{
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-submit-btn{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .reserved-rights p{
+
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    
+
+
+
+
+}
+
+@media screen and (min-width:761px) and (max-width:900px){
+
+    p{
+        font-size: 1.5rem;
+        line-height: 22px;       
+    }
+
+    .header-section{
+        padding:0.5rem;
+    }
+
+    .logo{
+        width: 15rem;
+    }
+
+    .mobile-nav-container{
+        border: none;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 0.7rem;
+    }
+    .span{
+        width: 3rem;
+        height: 0.4rem;
+        background-color: var(--rosa-escuro);
+    }
+    .span::before{
+        width: 1.2rem;
+        height: 0.3rem;
+        left:22px;
+        top: 1rem
+    }
+
+    .span::after{
+        width: 1.2rem;
+        height: 0.3rem;
+        left:22px;
+        bottom: 1rem
+
+    }
+
+    .closebtn{
+        right:7rem;
+        font-size: 4rem;
+        width: 1.3rem;
+        height: 0.9rem;
+        top:2.3rem;
+        ;
+    }
+
+    .overlay-content{
+        padding: 0px;
+        top:10%;
+        font-size: 1.3rem;
+    }
+
+    .intro{
+        padding: 0.8rem;
+    }
+
+    .intro h1{
+        font-size: 3rem;
+        ;
+    }
+
+    hr{
+        width: 10rem;
+        height: 0.1rem;
+    }
+
+    .h3-title{
+        font-size: 3rem;
+    }
+    .somos{
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .somos-img-container{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .somos-img-container img{
+        width: 100%;
+    }
+
+    .somos-text{
+        max-width: fit-content;
+    }
+
+    .somos-text div{
+        margin-bottom: 3.5rem;
+    }
+
+    .nosso-cursos-section{
+        padding-bottom:1.5rem ;
+    }
+
+    .curso-container{
+        flex-flow: column ;
+    }
+
+    .cursos img{
+        width: 30rem;
+        ;
+    }
+    .description{
+        padding: 1rem 1rem 1rem;
+    }
+
+    h4{
+        font-size: 2.3rem;
+        padding: 0.5rem;
+    }
+
+    .plano-container{
+        flex-flow: column;
+    }
+
+    .plano{
+        
+        padding: 0rem 0rem 1rem 0rem;
+        margin-top:1.5rem;
+
+    }
+
+    .plano h4{
+        padding: 0rem;
+    }
+
+    .margin-1-6{
+        margin-top:1.5rem;
+    }
+
+    .margin-5-3{
+        margin-top: 0rem;
+    }
+
+    .plano hr{
+        width: 35px;
+        
+    }
+
+    .advantage-row{
+        flex-flow: column;
+        padding-top: 1rem;
+        /* justify-content: center; */
+        /* align-items: space-between; */
+    }
+    .advantage{
+        max-width: 100%;;
+    }
+
+    .verde-escuro{
+        margin-top: 1rem;
+
+    }
+
+    .rosa-escuro{
+        margin-top: 1em;;
+    }
+
+    .news-letter-section{
+        padding: 1.5rem 0px;
+    }
+    .news-letter-container{
+        flex-flow: column;
+        justify-content:center ;
+        align-items: center;
+    }
+    .news-letter-container .h3-title{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .news-letter-container div{
+        width: 100%;
+    }
+
+    .news-letter-container p{
+     font-size: 2rem;  
+     text-align: center; 
+    }
+
+    .newsletter-form{
+        flex-flow: column;
+        margin-top: 1rem;
+        /* width: 130%; */
+        /* height: fit-content; */
+        /* padding: 0px; */
+        /* margin: 0px; */
+        
+        /* width: 10%; */
+    }
+
+    .newsletter-input{
+        height: fit-content;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    footer{
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-submit-btn{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    .reserved-rights p{
+
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    
+
+}
+
+@media screen and (min-width:901px) and (max-width:1165px){
+ .menu a{
+    font-size: 1rem;
+    padding: 0.5rem 0.3rem;
+ } 
+ 
+ .menu a:hover{
+    font-size: 1rem;
+    padding: 0.5rem 0.3rem;
+ }
+
+ .intro h1{
+    font-size: 3rem;;
+ }
+
+ hr{
+    width: 10rem;
+    height: 0.1rem;
+ }
+
+ .h3-title{
+    font-size: 2.5rem;
+ }
+
+ .somos-img-container img{
+    width: 100%;
+ }
+
+ .cursos img{
+    width: 20vw;
+ }
+
+ .cursos h4{
+    text-align: center;
+ }
+
+ .plano{
+
+    padding: 1rem 0px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+ }
+
+ .plano hr{
+    width: 30px;
+ }
+
+ .advantage h4{
+    font-size: 1.5rem;
+
+ }
+
+ .advantage p{
+    padding:0px 1.5rem;
+ }
+
+.form-container{
+    width: 40vw;
+}
+
+ .newsletter-input{    
+    width: 100%;
+ }
+
+ .newsletter-submit-btn{
+    font-size: 1.3rem;
+    padding: 0px 0.5rem;
+ }
+ .newsletter-form{
+    justify-content: flex-end;
+    width: 100%;
+    /* align-items: flex-end; */
+ }
+}
+
+@media screen and (min-width:1166px) and (max-width:1490px){
+.menu a{
+    font-size: 1rem;
+}
+
+.menu a:hover{
+    font-size: 1rem;
+}
+
+hr{
+    width: 13rem;
+    height: 0.1rem;
+}
+
+.h3-title{
+    font-size: 2.5rem;
+}
+
+.cursos h4{
+    text-align: center;
+}
+
+.plano{
+    padding: 1rem 0px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.plano hr{
+    width: 35px;;
+}
+
+.advantage h4{
+    font-size: 1.7rem;
+}
+
+.advantage p{
+    padding: 0px 2rem;
+}
+
+}
+
+@media screen and (max-width:900px){
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width:901px){
+    #mobile-nav-link{
+        display: none;
+    }
+} 
+
+
+/* mobile navigation Ends */
